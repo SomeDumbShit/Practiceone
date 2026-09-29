@@ -5,11 +5,16 @@ import java.util.Scanner;
 public class Task7 {
 
     public static long factorial(int n) {
-        long result = 1; // long  чтобы факториал большого числа не переполнил int
-        for (int i = 2; i <= n; i++) {
-            result *= i; // result = result * i
+ // long  чтобы факториал большого числа не переполнил int
+        for (int i = n; i > 0; i--) {
+            if(n == 1){
+                return 1;
+            }
+            if(n>1){
+                return n * factorial(n-1);
+            }// result = result * i
         }
-        return result;
+        return 0;
     }
 
     public static void main(String[] args) {
