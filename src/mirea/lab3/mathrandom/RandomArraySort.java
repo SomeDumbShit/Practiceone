@@ -3,7 +3,7 @@ package mirea.lab3.mathrandom;
 import java.util.Arrays;
 import java.util.Random;
 
-public class RandomArraySort {
+public class  RandomArraySort {
 
     // печатает массив чисел с двумя знаками после запятой
     public static void printArray(double[] arr) {
